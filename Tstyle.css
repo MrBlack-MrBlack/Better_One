@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game-container {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 450%;
+  left: 800%;
+  top: 30%;
+  margin: auto;
+}
+
+.flashcard {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  background: #ddd;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.choice:hover {
+  background: #ccc;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+ssss
+
+
+/* Basic reset and body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container styling */
+#game-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  transition: transform 0.3s;
+  position: absolute;
+  max-width: 400px;
+  width: 450%;
+  left: 800%;
+  top: 25%;
+}
+
+#game-container:hover {
+  transform: scale(1.05);
+}
+
+/* Flashcard question styling */
+.flashcard {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Choices container styling */
+.choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Individual choice button styling */
+.choice {
+  background: #6a11cb;
+  background: -webkit-linear-gradient(to right, #2575fc, #6a11cb);
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  border: none;
+  padding: 15px 25px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.choice:hover {
+  background: #6a11cb;
+  background: -webkit-linear-gradient(to right, #2575fc, #ff4081);
+  background: linear-gradient(to right, #2575fc, #ff4081);
+  transform: scale(1.05);
+}
+
+/* Correct and incorrect answer styling */
+.choice.correct {
+  background: #28a745 !important;
+  color: #fff;
+}
+
+.choice.incorrect {
+  background: #dc3545 !important;
+  color: #fff;
+}
+
+/* Result text styling */
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Keyframes for smooth transitions */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#game-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
